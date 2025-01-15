@@ -23,7 +23,10 @@ module.exports = class Database {
 
     async Connect(){
         try {
-            this.DB = await mongoose.connect(this.MONGOSTRING);
+            this.DB = await mongoose.connect(this.MONGOSTRING,{
+  useNewUrlParser: true,
+  useUnifiedTopology: true
+});
             this.Connected = true;
         } catch (error) {
             console.log(error);
