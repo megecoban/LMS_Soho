@@ -7,5 +7,8 @@
 		"koa-router": "^13.0.1",
 		"koa-static": "^5.0.0",
 		"mongoose": "^8.9.2"
+	},
+	"engines" : {
+		"node" : "~20.17.0"
 	}
 }
